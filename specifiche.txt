@@ -1,0 +1,52 @@
+L'utente non autenticato accede alla pagina di benvenuto del sistema. In questa pagina l'utente può cliccare su due
+collegamenti ipertestuali, uno per il login ed uno per la registrazione. Se l'utente decide di registrarsi, viene 
+restituita una pagina con una form da compilare con i dati che comporranno le credenziali dell'utente e le 
+specifiche del suo profilo. Dopo aver compilato la form ed aver inviato tutto con l'apposito bottone, se le 
+credenziali superano la validazione, viene restituita all'utente una pagina di conferma della registrazione da cui
+si può tornare alla pagina di benvenuto. Dopo la registrazione l'utente può effettuare il login. Se l'utente decide
+di effettuare il login, viene restituita una pagina per l'autenticazione delle credenziali. Dopo aver compilato la
+form ed aver inviato tutto con l'apposito bottone, se le credenziali superano la validazione, viene restituita una
+pagina "Home". 
+La pagina presenta una sidebar da cui si può accedere a diverse pagine ed effettuare il logout. Qualsiasi utente 
+autenticato può effettuare il logout ed accedere alle pagine messe a disposizione dal sistema, ad eccezione di 
+"Admin page" che può essere acceduta solo da utenti con ruolo ADMIN. Cliccando sul collegamento ipertestuale 
+(presente nella sidebar) "My projects" viene restituita una pagina con la lista dei progetti di cui l'utente 
+corrente è proprietario. L'utente può cancellare ognuno dei suoi progetti esistenti cliccando sul bottone "Delete" 
+posto di fianco alle specifiche del progetto. L'utente può creare nuovi progetti cliccando sul bottone "Add 
+project". A seguito di quest'azione, viene restituita una pagina con una form da compilare con i dati che 
+comporranno le specifiche del progetto. Dopo aver compilato la form ed aver inviato tutto con l'apposito bottone, 
+se i dati immessi superano la validazione, viene restituita una pagina contenente le specifiche del singolo 
+progetto appena inserito. Da questa pagina è possibile tornare alla pagina "My projects", aggiornare il progetto, 
+condividerlo con altri utenti ed aggiungere tasks e tags. La pagina relativa al singolo progetto può essere 
+raggiunta dalla lista dei progetti cliccando sul nome del progetto, il quale corrisponde ad una stringa a cui 
+è associato un collegamento ipertestuale.
+Se l'utente decide di aggiornare il progetto, viene restituita una form già compilata con i dati del progetto 
+corrente pronti per essere modificati ed inviati al sistema. Se l'utente decide di condividere il progetto con 
+un altro utente, viene restituita una pagina contenente la lista di tutti gli utenti del sistema con cui ancora 
+non è stato condiviso il progetto. Dopo la condivisione viene restituita una pagina con un messaggio che conferma
+l'operazione sia stata eseguita con successo e dalla quale si può tornare alla pagina del progetto condiviso.
+Se nella pagina del singolo progetto l'utente sceglie di aggiungere un task o un tag al progetto stesso, in entrambi
+i casi viene restituita una pagina contenente una form da compilare. Se la compilazione della form è andata a buon 
+fine, viene ricaricata la pagina del progetto aggiornata. L'utente autenticato può aggiungere tag al task ed 
+assegnare uno o più tasks ad un utente che ha visibilità del progetto a cui appartiene il task. Se l'utente decide 
+di assegnare il task ad un altro utente, viene restituita una pagina contenente la lista di tutti gli utenti che 
+hanno visibilità di quel progetto. Dopo che l'assegnazione è stata effettuata, viene restituita una pagina con un 
+messaggio che conferma l'operazione sia stata eseguita con successo e dalla quale si può tornare alla pagina del 
+progetto a cui appartiene il task. Se l'utente decide di aggiungere un tag ad un task, viene restituita una form da 
+compilare e se i dati immessi superano la validazione, viene restituita la pagina del progetto a cui appartiene il 
+task. 
+Cliccando sul collegamento ipertestuale (presente nella sidebar) "Profile" viene restituita una pagina con le 
+specifiche dell'utente autenticato. L'utente può aggiornare il proprio profilo. Cliccando su "Update profile" viene
+restituita una pagina contenente una form già compilata con i dati dell'utente esclusa la sua password. L'interazione
+con la data di creazione del profilo ed il ruolo dell'utente nel sistema è disabilitata, mentre gli altri campi sono 
+modificabili dall'utente autenticato. Se la validazione dei dati immessi va a buon fine, viene restituita la 
+pagina contenente i dati dell'utente. 
+Cliccando sul collegamento ipertestuale (presente nella sidebar) "Shared projects" viene restituita una pagina con la 
+lista dei progetti di cui l'utente ha visibilità. L'utente può visualizzare il singolo progetto cliccando sul 
+collegamento ipertestuale associato alla stringa del nome del progetto interessato. L'utente può tornare alla lista
+dei progetti condivisi tramite un apposito bottone.
+Cliccando sul collegamento ipertestuale (presente nella sidebar) "Admin page", un utente autorizzato (e dunque con
+ruolo ADMIN) può visualizzare la pagina. L'utente autorizzato può visualizzare la lista di tutti gli utenti 
+presenti nel sistema e può cancellarli.
+
+
